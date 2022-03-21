@@ -1,4 +1,6 @@
 import React from "react";
+
+import styles from "./styles";
 import {
   AppBar,
   Box,
@@ -11,7 +13,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 function TopBar() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={styles.topBar}>
       <AppBar position="fixed" color="transparent" sx={{ bgcolor: "white" }}>
         <Toolbar>
           <IconButton

@@ -1,16 +1,27 @@
 import React from "react";
-import "./styles.css";
+import "./base.css";
+import styles from "./styles.js";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SideNav from "./components/SideNav";
 import TopBar from "./components/TopBar";
-import { Paper, MenuItem, MenuList, Box } from "@mui/material";
+import Content from "./components/Content";
+import { Box } from "@mui/material";
 
 function App() {
   return (
-    <Box sx={{ minHeight: "100%" }}>
-      <TopBar />
-      <SideNav />
-    </Box>
+    <BrowserRouter>
+      <Box sx={styles.container}>
+        <TopBar />
+        <SideNav />
+        <Routes>
+          <Route path="/" element={<Content />} />
+          <Route path="/1" element={<Content />} />
+          <Route path="/2" element={<Content />} />
+          <Route path="/3" element={<Content />} />
+        </Routes>
+      </Box>
+    </BrowserRouter>
   );
 }
 

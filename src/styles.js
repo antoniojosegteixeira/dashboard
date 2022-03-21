@@ -1,7 +1,8 @@
 const styles = {
-  topBar: {
-    flexGrow: 1,
+  container: {
     position: "relative",
+    minHeight: "100vh",
+    display: "inline-flex",
   },
 };
 

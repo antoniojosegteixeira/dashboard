@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles";
 
+import { Link } from "react-router-dom";
 import {
   Paper,
   MenuItem,
@@ -14,10 +15,10 @@ import HouseIcon from "@mui/icons-material/House";
 function SideNav() {
   return (
     <Box sx={styles.box}>
-      <MenuList>
+      <MenuList sx={styles.menuWrapper}>
         {Array.from(Array(10).keys()).map((i) => {
           return (
-            <MenuItem key={i}>
+            <MenuItem key={i} component={Link} to={`/${i}`}>
               <Icon sx={{ mr: 2, color: "#d7d7d7" }}>
                 <HouseIcon />
               </Icon>
