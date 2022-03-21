@@ -1,0 +1,10 @@
+body,
+html {
+  min-height: 98vh;
+  margin: 0;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
