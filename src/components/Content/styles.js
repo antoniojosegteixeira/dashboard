@@ -1,8 +1,12 @@
 const styles = {
   content: {
-    width: "100vw",
-    height: "100vh",
-    backgroundColor: "red",
+    width: "100%",
+    height: "96vh",
+    display: "flex",
+    flexDirection: "row",
+    pt: "90px",
+    pl: "90px",
+    overflow: "hidden",
   },
 };
 

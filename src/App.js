@@ -15,10 +15,11 @@ function App() {
         <TopBar />
         <SideNav />
         <Routes>
-          <Route path="/" element={<Content />} />
-          <Route path="/1" element={<Content />} />
-          <Route path="/2" element={<Content />} />
-          <Route path="/3" element={<Content />} />
+          {Array.from(Array(11).keys()).map((e, i) => {
+            return (
+              <Route key={i} path={`/${i}`} element={<Content i={i} />} exact />
+            );
+          })}
         </Routes>
       </Box>
     </BrowserRouter>

@@ -3,6 +3,7 @@ const styles = {
     position: "relative",
     minHeight: "100vh",
     display: "inline-flex",
+    width: "100%",
   },
 };
 
